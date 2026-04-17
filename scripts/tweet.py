@@ -3,10 +3,24 @@ import tweepy
 import pandas as pd
 from textblob import TextBlob
 import matplotlib.pyplot as plt
+import os
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 # --- 1. Twitter API Authentication ---
-# You must replace these with your actual X Developer credentials
-BEARER_TOKEN = "YOUR_BEARER_TOKEN_HERE"
+# Get Bearer Token from environment variable or use placeholder
+BEARER_TOKEN = os.getenv("TWITTER_BEARER_TOKEN", "YOUR_BEARER_TOKEN_HERE")
+
+if BEARER_TOKEN == "YOUR_BEARER_TOKEN_HERE":
+    print("⚠️  WARNING: Using placeholder Bearer Token!")
+    print("   To use this script, you need:")
+    print("   1. Create .env file in project root")
+    print("   2. Add: TWITTER_BEARER_TOKEN=<your_token>")
+    print("   3. Get token from https://developer.twitter.com/")
+    print("\n   Proceeding with test mode...")
+
 client = tweepy.Client(bearer_token=BEARER_TOKEN)
 
 # --- 2. Query Setup ---

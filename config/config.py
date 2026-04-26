@@ -93,4 +93,37 @@ TIME_WINDOWS = {
     'extended': 12   # 1 year
 }
 
+# ===== RESILIENCE ANALYSIS CONFIGURATION =====
+
+# Recovery periods to analyze (in days)
+RECOVERY_PERIODS = [5, 10, 30, 60, 90]
+
+# Volatility analysis window (in days)
+VOLATILITY_WINDOW_DAYS = 30
+
+# Safe haven assets for resilience analysis
+SAFE_HAVEN_ASSETS = {
+    'GLD': 'Gold',
+    'TLT': 'Treasury Bonds',
+    '^VIX': 'Volatility Index (inverse)'
+}
+
+# War-sensitive sectors for resilience ranking
+RESILIENCE_FOCUS_SECTORS = ['SPY', 'XLE', 'XLF', 'ITA', 'USO', 'GLD', '^VIX']
+
+# Key wars for resilience analysis (subset of WAR_EVENTS)
+RESILIENCE_WAR_EVENTS = {
+    'iraq_war': WAR_EVENTS['iraq_war']['start_date'],
+    'israel_gaza_war': WAR_EVENTS['israel_gaza_war']['start_date'],
+    'us_israel_iran': WAR_EVENTS['us_israel_iran']['start_date']
+}
+
+# Resilience scoring thresholds
+RESILIENCE_THRESHOLDS = {
+    'strong_recovery': 5.0,      # >5% recovery = strong
+    'moderate_recovery': 0.0,    # 0-5% = moderate
+    'weak_recovery': -5.0,       # -5-0% = weak
+    'severe_impact': -5.0        # <-5% = severe impact
+}
+
 print(f"✓ Configuration loaded from {__file__}")

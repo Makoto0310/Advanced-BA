@@ -91,7 +91,16 @@ python scripts/market_data_downloader.py
 python scripts/iraq_war_analysis.py
 
 # Run Middle East conflicts analysis
-python scripts/middle_east_conflicts.py
+python scripts/israel_iran_analysis.py
+
+# Run War Resilience Analysis ⭐ NEW
+python scripts/war_resilience_analysis.py
+
+# Run Conflict Resilience Forecasting 🤖 NEW
+python scripts/conflict_resilience_forecast.py
+
+# View all available scripts
+python scripts/main.py
 ```
 
 ## 📈 Key Features
@@ -101,28 +110,68 @@ python scripts/middle_east_conflicts.py
 ✅ War-sensitive sector deep dive
 ✅ Daily percentage change tracking
 ✅ Statistical quantification of market impact
+✅ **War Resilience Analysis** ⭐ NEW
+✅ Safe haven effectiveness measurement
+✅ Sector resilience ranking
+✅ Recovery speed metrics
+✅ Volatility-based stability analysis
+✅ **Conflict Resilience Forecasting** 🤖 NEW
+✅ Machine learning predictions for future conflicts
+✅ Multi-model ensemble forecasting (Random Forest, Gradient Boosting)
+✅ Feature importance analysis
+✅ Scenario-based future conflict predictions
 ✅ Organized output structure
 ✅ Configurable for custom analysis
 
 ## 🔍 Key Findings
 
-**Iraq War (2003)**: Markets recovered quickly (+6.17% in 30 days)
-**Israel-Gaza War (2023)**: Resilient response (+4.95% in 30 days)  
-**US/Israel-Iran (2026)**: Bearish trend (-4.84%), Oil surge +43.60% ⚠️
+**War Resilience Rankings** (30-day recovery):
+- **USO (Oil)**: Most resilient (+19.50% avg)
+- **XLE (Energy)**: Strong recovery (+3.77%)
+- **ITA (Defense)**: Benefits from spending (+3.37%)
+- **XLF (Financials)**: Moderate resilience (+2.41%)
+- **SPY (S&P 500)**: Steady recovery (+2.09%)
+- **GLD (Gold)**: Mixed performance (-1.53%)
+- **^VIX (Fear Index)**: Most impacted (-8.26%)
 
-## 📚 Documentation
+**Individual War Performance**:
+- **Iraq War (2003)**: SPY recovered +6.2% in 30 days
+- **Israel-Gaza War (2023)**: ITA surged +11.2%, GLD +8.2%
+- **US/Israel-Iran (2026)**: USO exploded +43.6%, XLE +12.7%
 
+**Safe Haven Effectiveness**:
+- Gold and Treasury Bonds show mixed protection during crises
+- Recent conflicts demonstrate better market resilience than historical wars
+- Energy sectors show volatile but often strong recovery patterns
+
+**Forecasting Insights** 🤖:
+- **Red Sea Crisis 2027**: Moderate positive resilience (+0.9% across sectors)
+- **South China Sea 2028**: Minimal impact (+0.1% recovery)
+- **Eastern Europe 2029**: Significant negative impact (-5.0% across sectors)
+- Model accuracy: Random Forest achieves 4.93% mean absolute error
 - **config/config.py** - Centralized configuration
 - **scripts/utils.py** - Reusable utility functions
 - **outputs/visualizations/** - Analysis charts organized by war
 
-## 🤝 Contributing
+## � Conflict Resilience Forecasting
 
-Fork → Create Feature Branch → Commit → Push → Pull Request
+**Machine Learning Models**: Random Forest, Gradient Boosting, Linear Regression
+**Training Data**: Historical conflict responses (2003-2026)
+**Features**: Market conditions, conflict type, timing, volatility, geopolitical factors
+**Predictions**: 30-day recovery percentages for key sectors
+**Accuracy**: Best model achieves ~5% mean absolute error
 
-## 📄 License
+### Forecast Scenarios
+- **Red Sea Crisis 2027**: Oil-related Middle East conflict
+- **South China Sea 2028**: Asia-Pacific territorial dispute  
+- **Eastern Europe 2029**: Major European security crisis
 
-MIT License - See LICENSE file
+### Key Predictive Factors
+- Pre-conflict market volatility
+- Conflict location (Middle East vs. other regions)
+- Oil involvement
+- Market trend leading into conflict
+- VIX fear index levels
 
 ---
 

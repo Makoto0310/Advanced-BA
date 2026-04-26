@@ -27,8 +27,11 @@ def main():
     print("="*80)
     print("1. python market_data_downloader.py    - Download and save market data")
     print("2. python iraq_war_analysis.py         - Analyze Iraq War (2003)")
-    print("3. python middle_east_conflicts.py     - Analyze Israel-Gaza & US/Israel-Iran")
-    print("4. python comprehensive_analysis.py    - All conflicts comparison")
+    print("3. python israel_iran_analysis.py      - Analyze Israel-Gaza & US/Israel-Iran")
+    print("4. python war_resilience_analysis.py   - War Resilience Analysis")
+    print("5. python conflict_resilience_forecast.py - Forecast Future Conflict Resilience")
+    print("6. python analysis.py                  - General market analysis")
+    print("7. python Time series data.py          - Time series analysis")
     print("\n💡 Run individual scripts or use this as import for other projects")
     print("="*80)
 

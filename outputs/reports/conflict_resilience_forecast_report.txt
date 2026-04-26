@@ -1,0 +1,75 @@
+================================================================================
+CONFLICT RESILIENCE FORECAST REPORT
+================================================================================
+Generated: 2026-04-25 09:01:44
+Training Data: 18 samples from 3 conflicts
+
+MODEL PERFORMANCE
+------------------------------
+Random Forest:
+  MAE: 20.25%
+  RMSE: 20.25%
+  R²: nan
+
+Gradient Boosting:
+  MAE: 19.51%
+  RMSE: 19.51%
+  R²: nan
+
+Linear Regression:
+  MAE: 69.53%
+  RMSE: 69.53%
+  R²: nan
+
+BEST MODEL: Gradient Boosting (MAE: 19.51%)
+
+FUTURE CONFLICT PREDICTIONS
+-----------------------------------
+Conflict: Red Sea Crisis 2027
+Predicted 30-Day Recovery by Sector:
+    ITA: 11.2%
+    ^VIX: 9.9%
+    XLE: 9.5%
+    GLD: 8.2%
+    SPY: -1.2%
+    USO: -4.6%
+    XLF: -5.3%
+
+Conflict: South China Sea 2028
+Predicted 30-Day Recovery by Sector:
+    ITA: 11.2%
+    ^VIX: 9.7%
+    XLE: 9.4%
+    GLD: 8.2%
+    SPY: -2.1%
+    USO: -4.6%
+    XLF: -5.2%
+
+Conflict: Eastern Europe 2029
+Predicted 30-Day Recovery by Sector:
+    ITA: 11.2%
+    GLD: 8.2%
+    XLE: 7.8%
+    ^VIX: 3.9%
+    SPY: 0.0%
+    USO: -4.6%
+    XLF: -5.0%
+
+FORECASTING METHODOLOGY
+-------------------------
+• Trained on historical conflict data (2003-2026)
+• Features: Market conditions, conflict type, timing, volatility
+• Models: Random Forest, Gradient Boosting, Linear Regression
+• Prediction: 30-day recovery percentage for key sectors
+• Scenarios: Hypothetical future conflicts with estimated parameters
+
+LIMITATIONS & ASSUMPTIONS
+-------------------------
+• Historical patterns may not predict unprecedented events
+• Market reactions depend on conflict scale and global context
+• Predictions are probabilistic, not deterministic
+• External factors (economy, policy) not fully captured
+
+================================================================================
+END OF FORECAST REPORT
+================================================================================
